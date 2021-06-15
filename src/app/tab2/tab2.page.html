@@ -1,17 +1,81 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 2
+      Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="light">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-searchbar placeholder=""></ion-searchbar>
+
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="https://i.ytimg.com/vi/aJMfEz2cobI/maxresdefault.jpg">  
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>
+            Godzilla vs Kong
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-badge color="dark">Categoria:</ion-badge>
+          <ion-note class="ion-no-padding" slot="end" color="dark"><span>Ação</span></ion-note>
+        </ion-item>
+      </ion-card>
+      </ion-col>
+      
+      <ion-col>
+        <ion-card>
+          <img src="https://www.planoaberto.com.br/wp-content/uploads/2021/01/miami-capa.jpg">  
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>
+            Uma noite em miami
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-badge color="dark">Categoria:</ion-badge>
+          <ion-note class="ion-no-padding" slot="end" color="dark"><span>Ação</span></ion-note>
+        </ion-item>
+      </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="https://entreterse.com.br/wp-content/uploads/2019/05/A-Lenda-de-Tarzan.jpg">  
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>
+            A lenda de Tarzan
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-badge color="dark">Categoria:</ion-badge>
+          <ion-note class="ion-no-padding" slot="end" color="dark"><span>Aventura</span></ion-note>
+        </ion-item>
+      </ion-card>
+      </ion-col>
+      
+      <ion-col>
+        <ion-card>
+          <img src="https://i.pinimg.com/originals/8a/84/ee/8a84ee3729e1e43628006c94e9c698bc.jpg">  
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>
+           À prova de fogo
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-badge color="dark">Categoria:</ion-badge>
+          <ion-note class="ion-no-padding" slot="end" color="dark"><span>Gospel</span></ion-note>
+        </ion-item>
+      </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
